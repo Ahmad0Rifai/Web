@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kampüsteki seminer, atölye ve söyleşileri keşfedin.">
+  <meta name="author" content="Ahmad Alrifai">
+  <title>Etkinlik Ekle | Kampüs Etkinlikleri</title>
+  <link rel="stylesheet" href="css/2121032805.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Etkinlik Ekle</h1>
+      <nav aria-label="Ana menü">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="etkinlikler.html">Etkinlikler</a>
+        <a href="etkinlik-ekle.html" aria-current="page">Ekle</a>
+        <a href="etkinlik-guncelle.html">Güncelle</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="ana-icerik">
+    <form action="etkinlik-ekle.html" method="get" class="event-form">
+      <p class="form-hint">Tüm alanlar zorunludur.</p>
+      <div class="form-field">
+        <label for="etkinlik-adi">Etkinlik adı</label>
+        <input type="text" id="etkinlik-adi" name="ad" required maxlength="100" aria-describedby="ad-hata">
+        <span class="field-error" id="ad-hata" hidden>Etkinlik adını girin.</span>
+      </div>
+      <div class="form-field">
+        <label for="kategori">Kategori</label>
+        <select id="kategori" name="kategori" required aria-describedby="kategori-hata">
+          <option value="">Seçiniz</option>
+            <option value="Seminer">Seminer</option>
+            <option value="Atölye">Atölye</option>
+            <option value="Söyleşi">Söyleşi</option>
+        </select>
+        <span class="field-error" id="kategori-hata" hidden>Bir kategori seçin.</span>
+      </div>
+      <div class="form-field">
+        <label for="tarih">Tarih</label>
+        <input type="date" id="tarih" name="tarih" required aria-describedby="tarih-hata">
+        <span class="field-error" id="tarih-hata" hidden>Etkinlik tarihini girin.</span>
+      </div>
+      <div class="form-field">
+        <label for="aciklama">Açıklama</label>
+        <textarea id="aciklama" name="aciklama" rows="5" required maxlength="2000" aria-describedby="aciklama-hata"></textarea>
+        <span class="field-error" id="aciklama-hata" hidden>Açıklama yazın.</span>
+      </div>
+      <button type="submit">Kaydet</button>
+    </form>
+  </main>
+  <footer class="site-footer container">
+    <p>Ahmad Alrifai · 2121032805 · 2026</p>
+  </footer>
+</body>
+</html>

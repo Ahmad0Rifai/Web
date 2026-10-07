@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Siber Güvenlik Söyleşisi</title>
+  <desc id="desc">27 EKİM 2026, 13:00, B Blok Amfi 1</desc>
+  <rect width="720" height="480" fill="#17263c"/>
+  <rect x="40" y="42" width="64" height="6" fill="#a9c2e5"/>
+  <g fill="#ffffff" font-family="Georgia, serif">
+    <text x="40" y="93" font-size="21" letter-spacing="3">KAMPÜS ETKİNLİKLERİ</text>
+    <text x="40" y="205" font-size="39">Siber Güvenlik Söyleşisi</text>
+    <text x="40" y="254" font-size="25" fill="#a9c2e5">Söyleşi · 2026</text>
+    <text x="40" y="376" font-size="28">27 EKİM 2026 · 13:00</text>
+    <text x="40" y="420" font-size="23">B Blok Amfi 1</text>
+  </g>
+</svg>
