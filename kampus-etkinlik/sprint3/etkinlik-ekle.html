@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kampüsteki seminer, atölye ve söyleşileri keşfedin.">
+  <meta name="author" content="Ahmad Alrifai">
+  <title>Etkinlik Ekle | Kampüs Etkinlikleri</title>
+  <link rel="stylesheet" href="css/2121032805.css">
+  <script type="module" src="js/event-form.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Etkinlik Ekle</h1>
+      <nav aria-label="Ana menü">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="etkinlikler.html">Etkinlikler</a>
+        <a href="etkinlik-ekle.html" aria-current="page">Ekle</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="ana-icerik">
+    <form id="etkinlik-formu" class="event-form" novalidate>
+      <p class="form-hint">Yıldızlı (*) alanlar zorunludur. Bu sprintte bilgiler kalıcı olarak kaydedilmez; sonuç aşağıda gösterilir.</p>
+      <div class="form-field">
+        <label for="ad">Etkinlik adı *</label>
+        <input id="ad" name="ad" type="text" minlength="3" maxlength="100" required aria-describedby="ad-hata">
+        <span class="field-error" id="ad-hata"></span>
+      </div>
+      <div class="form-field">
+        <label for="kategori">Kategori *</label>
+        <select id="kategori" name="kategori" required aria-describedby="kategori-hata"><option value="">Seçiniz</option></select>
+        <span class="field-error" id="kategori-hata"></span>
+      </div>
+      <div class="form-field">
+        <label for="tarih">Tarih *</label>
+        <input id="tarih" name="tarih" type="date" required aria-describedby="tarih-hata">
+        <span class="field-error" id="tarih-hata"></span>
+      </div>
+      <div class="form-field">
+        <label for="saat">Saat *</label>
+        <input id="saat" name="saat" type="time" required aria-describedby="saat-hata">
+        <span class="field-error" id="saat-hata"></span>
+      </div>
+      <div class="form-field">
+        <label for="yer">Yer *</label>
+        <input id="yer" name="yer" type="text" required aria-describedby="yer-hata">
+        <span class="field-error" id="yer-hata"></span>
+      </div>
+      <div class="form-field">
+        <label for="kontenjan">Kontenjan (isteğe bağlı)</label>
+        <input id="kontenjan" name="kontenjan" type="number" min="1" max="1000" step="1" aria-describedby="kontenjan-hata">
+        <span class="field-error" id="kontenjan-hata"></span>
+      </div>
+      <div class="form-field">
+        <label for="aciklama">Açıklama (isteğe bağlı)</label>
+        <textarea id="aciklama" name="aciklama" rows="4" maxlength="2000" aria-describedby="aciklama-hata"></textarea>
+        <span class="field-error" id="aciklama-hata"></span>
+      </div>
+      <button type="submit">Kaydet</button>
+    </form>
+    <div id="form-mesaj" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+    <noscript><p class="notice notice-error">Bu sayfa için JavaScript etkin olmalıdır.</p></noscript>
+  </main>
+  <footer class="site-footer container">
+    <p>Ahmad Alrifai · 2121032805 · 2026</p>
+  </footer>
+</body>
+</html>
