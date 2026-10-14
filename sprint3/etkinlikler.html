@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kampüsteki seminer, atölye ve söyleşileri keşfedin.">
+  <meta name="author" content="Ahmad Alrifai">
+  <title>Kampüs Etkinlikleri | Kampüs Etkinlikleri</title>
+  <link rel="stylesheet" href="css/2121032805.css">
+  <script type="module" src="js/event-list.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Kampüs Etkinlikleri</h1>
+      <nav aria-label="Ana menü">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="etkinlikler.html" aria-current="page">Etkinlikler</a>
+        <a href="etkinlik-ekle.html">Ekle</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="ana-icerik">
+    <h2 id="liste-baslik">Tüm Etkinlikler</h2>
+    <form id="filtre-formu" class="filtre" role="search">
+      <div>
+        <label for="arama">Etkinlik ara</label>
+        <input type="search" id="arama" name="arama" placeholder="Atölye, kariyer…" autocomplete="off" aria-controls="etkinlik-listesi">
+      </div>
+      <div>
+        <label for="kategori-filtre">Kategori</label>
+        <select id="kategori-filtre" name="kategori" aria-controls="etkinlik-listesi"><option value="">Tümü</option></select>
+      </div>
+    </form>
+    <p id="sonuc" role="status" aria-live="polite" aria-atomic="true"></p>
+    <section id="etkinlik-listesi" class="event-grid" aria-labelledby="liste-baslik"></section>
+    <noscript><p class="notice notice-error">Bu sayfa için JavaScript etkin olmalıdır.</p></noscript>
+  </main>
+  <footer class="site-footer container">
+    <p>Ahmad Alrifai · 2121032805 · 2026</p>
+  </footer>
+</body>
+</html>
