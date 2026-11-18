@@ -20,4 +20,15 @@ app.use((req, res) => {
   res.status(404).json({ error: { message: "Route not found" } });
 });
 
+// Handle 404 for undefined routes
+app.use((req, res) => {
+  res.status(404).json({ error: { message: "Route not found" } });
+});
+
+// Global error handler for 500 Server Errors
+app.use((err, req, res, next) => {
+  console.error(err.message);
+  res.status(500).json({ error: { message: "Server error" } });
+});
+
 export default app;
