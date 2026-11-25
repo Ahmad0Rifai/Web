@@ -9,7 +9,7 @@ export const seedEvents = [
         description: "Ağ güvenliği ve sızma testleri üzerine temel kavramlar."
     },
     {
-        title: "Flutter ile Mobil Uygulama",
+        title: "Flutter ile Mobil Uygulama Atölyesi",
         category: "Atölye",
         capacity: 40,
         date: "05-11-2026",
@@ -45,7 +45,7 @@ export const seedEvents = [
         description: "Yapay zeka modelleri ve veri madenciliği uygulamaları."
     },
     {
-        title: "React ve Node.js Bootcamp",
+        title: "React ve Node.js Atölyesi",
         category: "Atölye",
         capacity: 50,
         date: "18-12-2026",
